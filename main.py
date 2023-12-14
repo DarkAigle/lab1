@@ -1,16 +1,16 @@
-# This is a sample Python script.
+number = input("Введите число: ")
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+even_count = 0
+odd_count = 0
 
+for digit in number:
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+    digit = int(digit)
 
+    if digit % 2 == 0:
+        even_count += 1
+    else:
+        odd_count += 1
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+print("Количество четных цифр:", even_count)
+print("Количество нечетных цифр:", odd_count)
